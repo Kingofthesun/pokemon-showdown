@@ -14057,6 +14057,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 160},
 		contestType: "Cool",
 	},
+	risingflame: {
+		num: 826,
+		accuracy: 90,
+		basePower: 20,
+		basePowerCallback(pokemon, target, move) {
+			return 20 * move.hit;
+		},
+		category: "Special",
+		name: "Rising Flame",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Fire",
+		zMove: {basePower: 120},
+		maxMove: {basePower: 140},
+	},
 	risingvoltage: {
 		num: 804,
 		accuracy: 100,

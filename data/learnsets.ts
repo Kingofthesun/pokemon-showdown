@@ -30124,6 +30124,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			return: ["7M", "6M", "5M", "4M", "3M"],
 			revenge: ["8M"],
 			reversal: ["8M", "8L56"],
+			risingflame:["8M"],
 			roar: ["7M", "6M", "5M", "4M", "3M"],
 			rockclimb: ["4M"],
 			rockslide: ["8M", "7M", "6M", "5M", "4M", "3T"],
