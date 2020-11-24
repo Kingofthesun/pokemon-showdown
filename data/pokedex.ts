@@ -4726,7 +4726,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Fire", "Fighting"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 80, atk: 120, def: 70, spa: 110, spd: 70, spe: 80},
-		abilities: {0: "Blaze", H: "Speed Boost"},
+		abilities: {0: "Blaze", 1: "Quick Feet", H: "Speed Boost"},
 		heightm: 1.9,
 		weightkg: 52,
 		color: "Red",
