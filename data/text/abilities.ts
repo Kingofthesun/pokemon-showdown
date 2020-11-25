@@ -926,6 +926,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		block: "  [POKEMON] cannot be confused!",
 	},
+	parasite: {
+		name: "Parasite",
+		shortDesc: "Holder gains 1.3x HP from draining moves/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
+	},
 	parentalbond: {
 		name: "Parental Bond",
 		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",

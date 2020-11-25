@@ -1732,7 +1732,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	firewood: {
 		name: "Fire Wood",
-		spritenum: 606,
+		spritenum: 61,
 		fling: {
 			basePower: 30,
 		},
