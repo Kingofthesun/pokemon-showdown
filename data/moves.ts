@@ -7239,10 +7239,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if(source?.hasItem('gravityrock')){
 					if (source?.hasAbility('persistent')) {
 						this.add('-activate', source, 'ability: Persistent', effect);
-						return 7;
+						return 10;
 					}
-					this.add('-activate', source, 'item: Gravity Rock', effect);
-					return 9;
+					// this.add('-activate', source, 'item: Gravity Rock', effect);
+					return 8;
 				}
 				else if (source?.hasAbility('persistent')) {
 					this.add('-activate', source, 'ability: Persistent', effect);
