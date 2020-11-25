@@ -2167,6 +2167,15 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 884,
 		gen: 7,
 	},
+	gravityrock: {
+		name: "Gravity Rock",
+		spritenum: 194,
+		fling:{
+			basePower: 60,
+		},
+		num: 975,
+		gen: 8,
+	},
 	greatball: {
 		name: "Great Ball",
 		spritenum: 174,

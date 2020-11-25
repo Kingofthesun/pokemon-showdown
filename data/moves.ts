@@ -7236,7 +7236,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
-				if (source?.hasAbility('persistent')) {
+				if(source?.hasItem('gravityrock')){
+					if (source?.hasAbility('persistent')) {
+						this.add('-activate', source, 'ability: Persistent', effect);
+						return 7;
+					}
+					this.add('-activate', source, 'item: Gravity Rock', effect);
+					return 9;
+				}
+				else if (source?.hasAbility('persistent')) {
 					this.add('-activate', source, 'ability: Persistent', effect);
 					return 7;
 				}
