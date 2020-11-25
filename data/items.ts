@@ -1730,6 +1730,23 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 82,
 		gen: 1,
 	},
+	firewood: {
+		name: "Fire Wood",
+		spritenum: 606,
+		fling: {
+			basePower: 30,
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (move.type === 'Fire') {
+				target.useItem();
+			}
+		},
+		boosts: {
+			atk: 1,
+		},
+		num: 976,
+		gen: 6,
+	},
 	firiumz: {
 		name: "Firium Z",
 		spritenum: 632,
@@ -2101,6 +2118,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 796,
 		gen: 7,
+	},
+	goodnightpillow: {
+		name: "Good-Night Pillow",
+		spritenum: 456,
+		fling: {
+			basePower: 10,
+		},
+		onResidual(pokemon) {
+			if (pokemon.status === 'slp' || pokemon.ability === 'comatose') {
+				this.heal(pokemon.baseMaxhp / 10);
+			}
+		},
+		num: 976,
+		gen: 8,
 	},
 	grassgem: {
 		name: "Grass Gem",

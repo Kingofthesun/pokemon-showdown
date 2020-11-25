@@ -532,6 +532,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		desc: "Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
 	},
+	firewood: {
+		name: "Fire Wood",
+		desc: "Raises holder's Attack by 1 if hit by an Fire-type attack. Single use.",
+	},
 	firiumz: {
 		name: "Firium Z",
 		desc: "If holder has a Fire move, this item allows it to use a Fire Z-Move.",
@@ -664,6 +668,11 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Gold Bottle Cap",
 		desc: "Used for Hyper Training. All of a Pokemon's stats are calculated with an IV of 31.",
 	},
+	goodnightpillow: {
+		name: "Good-Night Pillow",
+		desc: "Each turn, if holder is asleep, restores 1/10 max HP.",
+	}
+	,
 	grassgem: {
 		name: "Grass Gem",
 		desc: "Holder's first successful Grass-type attack will have 1.3x power. Single use.",
