@@ -1395,6 +1395,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyWeight(weighthg) {
 			return weighthg * 2;
 		},
+		onModifyDef(def){
+			return this.chainModify(1.25);
+		},
+		onModifySpD(spd){
+			return this.chainModify(1.25);
+		},
+		onModifySpe(spe){
+			return this.chainModify(.5);
+		},
 		name: "Heavy Metal",
 		rating: 0,
 		num: 134,
