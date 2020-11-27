@@ -1802,6 +1802,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyWeight(weighthg) {
 			return this.trunc(weighthg / 2);
 		},
+		onModifyDef(def){
+			return this.chainModify(.75);
+		},
+		onModifySpD(spd){
+			return this.chainModify(.75);
+		},
+		onModifySpe(spe){
+			return this.chainModify(1.5);
+		},
 		name: "Light Metal",
 		rating: 1,
 		num: 135,
